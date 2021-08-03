@@ -1,0 +1,33 @@
+
+.a{
+    list-style: decimal;
+    font-size: 20px;
+    color: darkgreen;
+    margin: 80px;
+}
+
+.b {
+    list-style : decimal;
+    font-size: 20px;
+    color: darkgreen;
+     margin: 80px; 
+  }
+
+div{
+   margin: 50px;
+}
+
+h1{
+    margin: 50px;
+    color:rgb(67, 151, 235);
+    font-size: 90px;
+  
+}
+
+
+
+h3{
+    margin: 50px;
+    font-size: 50px;
+    
+}

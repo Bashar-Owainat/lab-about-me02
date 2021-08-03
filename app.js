@@ -78,3 +78,49 @@ else{
 let userName = prompt("Enter your name please");
 alert("Welcome to my website "+userName);
 alert("Dear "+userName+", I hope you like my website")
+
+let question6 = Number (prompt("I picked a number from 1 to 40 and you have to guess what is it. Note that you have 4 attempts"));
+let num = 18;
+
+for(let i = 0; i < 3; i++){
+    if(question6 == num){
+        alert("Correct!");
+        break;
+    }
+}
+    for(let i = 0; i < 3; i++){
+    if ( question6 < 18){
+         question6 = Number(prompt("Try Again. HINT your number is low"));
+         
+    }
+}
+    for(let i = 0; i < 3; i++){
+          if (question6 >18 && question6 < 41){
+            question6 = Number(prompt("Try Again. HINT your number is high"));
+         
+         }
+}   
+
+let favCharacters = ['Kurapika', 'Gon', 'Killua', 'Leorio', 'Hisoka', 'Netero'];
+
+    
+let question7 = (prompt('Guess My favoraite characters in Anime Hunter. Note that you have 6 attempts and there are more than one correct answer'));
+
+let result;
+ for (let i = 0; i < favCharacters.length-1 ; i++){
+      result = favCharacters.indexOf(question7)
+     if(result == -1 ){
+         question7 = prompt('try another one')
+         
+     }
+     else{
+     alert("Correct");
+     alert("the correct answers are : "+favCharacters);
+     break;
+     }
+
+ }
+
+
+
+
