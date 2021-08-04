@@ -122,8 +122,8 @@ for(let i = 0; i < 3; i++){
 
 q6();
 
-
-let favCharacters = ['Kurapika', 'Gon', 'Killua', 'Leorio', 'Hisoka', 'Netero'];
+function q7 () {
+    let favCharacters = ['Kurapika', 'Gon', 'Killua', 'Leorio', 'Hisoka', 'Netero'];
 
     
 let question7 = (prompt('Guess My favoraite characters in Anime Hunter. Note that you have 6 attempts and there are more than one correct answer'));
@@ -142,6 +142,8 @@ let result;
      }
 
  }
+}
+q7();
 
 
 
