@@ -38,8 +38,8 @@ else{
 q2();
 
 
-
-let question3 = prompt("Am I 21 years old? Yes/y or No/n");
+function q3 () {
+    let question3 = prompt("Am I 21 years old? Yes/y or No/n");
 if(question3 != null){
     question3 = question3.toLocaleLowerCase();
 }
@@ -52,6 +52,9 @@ else{
     //console.log("Wrong");
     alert(" Wrong ");
 }
+}
+
+q3();
 
 let question4 = prompt("Do I study cyber security Yes/y or No/n");
 if(question4 != null){
