@@ -1,5 +1,10 @@
 'use strict';
 
+let userName = prompt('Enter your name please');
+alert('Welcome to my website '+userName);
+
+let score = 0;
+
 function q1 () {
     let question1 = prompt('Do I love to learning new languages? Yes/y or No/n');
 
@@ -10,10 +15,11 @@ function q1 () {
     if(question1 === 'yes' || question1 === 'y'){
         // console.log('Correct!');
         alert(' Correct! ');
+        score++;
     }
     else{
         //console.log('Wrong');
-        alert(' Wrong ');
+        alert(' Wrong. I love to learn new things');
     }
 }
 
@@ -28,10 +34,11 @@ function q2 () {
     if(question2 === 'yes' || question2 === 'y'){
     //console.log('Correct!');
         alert(' Correct! ');
+        score++;
     }
     else{
     //console.log('Wrong');
-        alert(' Wrong ');
+        alert(' Wrong. I love my major');
     }
 }
 q2();
@@ -46,10 +53,11 @@ function q3 () {
     if(question3 === 'no' || question3 === 'n'){
     //console.log('Correct!');
         alert(' Correct! ');
+        score++;
     }
     else{
     //console.log('Wrong');
-        alert(' Wrong ');
+        alert(' Wrong. I\'m 19');
     }
 }
 
@@ -64,10 +72,11 @@ function q4 () {
     if(question4 === 'no' || question4 === 'n'){
         // console.log('Correct!');
         alert(' Correct! ');
+        score++;
     }
     else{
         // console.log('Wrong');
-        alert(' Wrong ');
+        alert(' Wrong. I study software engineering');
     }
 }
 q4();
@@ -82,18 +91,18 @@ function q5 () {
     if(question5 === 'yes' || question5 === 'y'){
         // console.log('Correct!');
         alert(' Correct! ');
+        score++;
     }
     else{
         // console.log('Wrong');
-        alert(' Wrong ');
+        alert(' Wrong. I study at ASAC');
     }
 }
 q5();
 
 
-let userName = prompt('Enter your name please');
-alert('Welcome to my website '+userName);
-alert('Dear '+userName+', I hope you like my website');
+
+
 
 function q6 () {
     let question6 = Number (prompt('I picked a number from 1 to 40 and you have to guess what is it. Note that you have 4 attempts'));
@@ -102,17 +111,18 @@ function q6 () {
     for(let i = 0; i < 3; i++){
         if(question6 === num){
             alert('Correct!');
+            score++;
             break;
         }
-    }
-    for(let i = 0; i < 3; i++){
-        if ( question6 < 18){
+        else if ( question6 < num){
             question6 = Number(prompt('Try Again. HINT your number is low'));
         }
-    }
-    for(let i = 0; i < 3; i++){
-        if (question6 >18 && question6 < 41){
+
+        else if (question6 >num && question6 < 41){
             question6 = Number(prompt('Try Again. HINT your number is high'));
+        }
+        if(i === 2){
+            alert('The correct number is 18');
         }
     }
 }
@@ -125,21 +135,24 @@ function q7 () {
     let question7 = (prompt('Guess My favoraite characters in Anime Hunter. Note that you have 6 attempts and there are more than one correct answer'));
 
     let result;
-    for (let i = 0; i < favCharacters.length-1 ; i++){
+    for (let i = 0; i < 5 ; i++){
         result = favCharacters.indexOf(question7);
         if(result === -1 ){
             question7 = prompt('try another one');
         }
-        else{
+        else if (result !== -1){
             alert('Correct');
-            alert('the correct answers are : '+favCharacters);
+            score++;
             break;
+        }
+        if(i === 4){
+            alert('the correct answers are : '+favCharacters);
         }
 
     }
 }
 q7();
 
-
+alert('Dear '+userName+', I hope you like my website your score is '+score+' out of 7');
 
 

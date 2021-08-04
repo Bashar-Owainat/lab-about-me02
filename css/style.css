@@ -5,7 +5,9 @@
     color: darkgreen;
     margin: 80px;
 }
-
+body{
+    background-color: rgb(229, 245, 248);
+}
 .b {
     list-style : decimal;
     font-size: 20px;
