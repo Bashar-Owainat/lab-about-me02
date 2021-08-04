@@ -20,7 +20,8 @@ else{
 
 q1();
 
-let question2 = prompt("Do I love my major? Yes/y or No/n");
+function q2 () {
+    let question2 = prompt("Do I love my major? Yes/y or No/n");
 if(question2 != null){
     question2 = question2.toLocaleLowerCase();
 }
@@ -33,6 +34,9 @@ else{
     //console.log("Wrong");
     alert(" Wrong ");
 }
+}
+q2();
+
 
 
 let question3 = prompt("Am I 21 years old? Yes/y or No/n");
