@@ -73,8 +73,8 @@ else{
 }
 q4();
 
-
-let question5 = prompt("Do I stydy at ASAC? Yes/y or No/n");
+function q5 () {
+    let question5 = prompt("Do I stydy at ASAC? Yes/y or No/n");
 
 if(question5 != null){
     question5 = question5.toLocaleLowerCase();
@@ -88,6 +88,9 @@ else{
    // console.log("Wrong");
     alert(" Wrong ");
 }
+}
+q5();
+
 
 let userName = prompt("Enter your name please");
 alert("Welcome to my website "+userName);
