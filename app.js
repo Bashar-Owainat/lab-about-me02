@@ -96,7 +96,8 @@ let userName = prompt("Enter your name please");
 alert("Welcome to my website "+userName);
 alert("Dear "+userName+", I hope you like my website")
 
-let question6 = Number (prompt("I picked a number from 1 to 40 and you have to guess what is it. Note that you have 4 attempts"));
+function q6 () {
+    let question6 = Number (prompt("I picked a number from 1 to 40 and you have to guess what is it. Note that you have 4 attempts"));
 let num = 18;
 
 for(let i = 0; i < 3; i++){
@@ -117,6 +118,10 @@ for(let i = 0; i < 3; i++){
          
          }
 }   
+}
+
+q6();
+
 
 let favCharacters = ['Kurapika', 'Gon', 'Killua', 'Leorio', 'Hisoka', 'Netero'];
 
