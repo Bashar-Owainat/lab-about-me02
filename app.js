@@ -1,6 +1,6 @@
 'use strict';
 
-
+function q1 () {
 let question1 = prompt("Do I love to learning new languages? Yes/y or No/n");
 
 if(question1 != null){
@@ -16,6 +16,9 @@ else{
     //console.log("Wrong");
     alert(" Wrong ");
 }
+}
+
+q1();
 
 let question2 = prompt("Do I love my major? Yes/y or No/n");
 if(question2 != null){
