@@ -56,7 +56,8 @@ else{
 
 q3();
 
-let question4 = prompt("Do I study cyber security Yes/y or No/n");
+function q4 () {
+    let question4 = prompt("Do I study cyber security Yes/y or No/n");
 if(question4 != null){
     question4 = question4.toLocaleLowerCase();
 }
@@ -69,6 +70,9 @@ else{
    // console.log("Wrong");
     alert(" Wrong ");
 }
+}
+q4();
+
 
 let question5 = prompt("Do I stydy at ASAC? Yes/y or No/n");
 
