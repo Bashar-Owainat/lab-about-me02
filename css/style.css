@@ -1,17 +1,31 @@
+header{
+    outline-style: groove;
+    outline-color: rgb(29, 67, 126);
+    outline-width: 5px;
+}  
+
+footer{
+    outline-style: groove;
+    outline-color: rgb(34, 99, 196);
+}
 
 .a{
     list-style: decimal;
     font-size: 20px;
-    color: darkgreen;
+    color: rgb(31, 138, 31);
     margin: 80px;
 }
 body{
-    background-color: rgb(229, 245, 248);
+    background-image: url(https://cdn.wallpapersafari.com/22/32/RWg5f1.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+    
 }
 .b {
     list-style : decimal;
     font-size: 20px;
-    color: darkgreen;
+    color: rgb(31, 138, 31);
      margin: 80px; 
   }
 
@@ -26,10 +40,17 @@ h1{
   
 }
 
-
+h4{
+    margin: 50px;
+    font-size: 20px;
+    color:rgb(67, 151, 235);
+}
 
 h3{
     margin: 50px;
     font-size: 50px;
+    color:rgb(67, 151, 235);
     
 }
+
+
